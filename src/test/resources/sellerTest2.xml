@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Add Seller Functionality Test">
+    <test name="Add Seller">
+        <classes>
+            <class name="tests.sellertestNG2">
+                <methods>
+                    <include name="sellerFunctionality"/>
+                    <include name="sellerNeg"/>
+                    <include name="searchSeller"/>
+                    <include name="nameSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
