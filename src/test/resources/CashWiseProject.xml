@@ -8,6 +8,7 @@
                     <include name="sellerNeg"/>
                     <include name="searchSeller"/>
                     <include name="nameSearch"/>
+                    <include name="closeWindow"/>
                 </methods>
             </class>
             <class name="tests.AddingClientTest">

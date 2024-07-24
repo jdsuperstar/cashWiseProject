@@ -1,6 +1,7 @@
 package tests;
 
 import com.github.javafaker.Faker;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,13 +19,15 @@ public class ProductsAndServicesTest {
     ProductsAndServicesPage productsAndServicesPage;
     Faker faker;
 
+
     @BeforeMethod
     public void setUp() {
+        WebDriver driver = Driver.getDriver();
         homePage = new HomePage();
         userPage = new UserPage();
         productsAndServicesPage = new ProductsAndServicesPage();
         faker = new Faker();
-        Driver.getDriver().get(config.getProperty("website"));
+        driver.get("https://cashwise.us/");
         homePage.login("vladtest@gmail.com", "123456");
     }
 

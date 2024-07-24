@@ -29,7 +29,7 @@ public class sellertestNG2 {
             String number = numberAddress+""+numberAddress+""+numberAddress+""+"2";
 
 
-            Driver.getDriver().get("https://cashwise.us/");
+            driver.get("https://cashwise.us/");
             cashWiseHomePage.login("vladtest@gmail.com","123456");
             seller.expenses.click();
             seller.seller.click();
@@ -68,9 +68,16 @@ public class sellertestNG2 {
         @Test
         //Negative: search any name and make sure is not in table
         public void nameSearch()  {
+
             seller.enterName("Johny Dankha");
+
         }
-        
+        @Test
+        public void closeWindow(){
+
+            Driver.quitDriver();
+        }
+
     }
 
 
