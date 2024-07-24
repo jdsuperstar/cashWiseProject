@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CashWise Functionality Test">
+    <test name="Cash Wise">
+        <classes>
+            <class name="tests.sellertestNG2">
+                <methods>
+                    <include name="sellerFunctionality"/>
+                    <include name="sellerNeg"/>
+                    <include name="searchSeller"/>
+                    <include name="nameSearch"/>
+                    <include name="closeWindow"/>
+                </methods>
+            </class>
+            <class name="tests.AddingClientTest">
+                <methods>
+                    <include name="AddClient"/>
+                    <include name="ClientWasNotAdded"/>
+                    <include name="SelectAll"/>
+                    <include name="ArchiveAll"/>
+                </methods>
+            </class>
+            <class name="tests.ProductsAndServicesTest">
+                <methods>
+                    <include name="viewProductAndService"/>
+                    <include name="addProductOrService"/>
+                    <include name="editProductOrService"/>
+                    <include name="deleteProductOrService"/>
+                    <include name="addWithMissingFields"/>
+                    <include name="editWithInvalidData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
