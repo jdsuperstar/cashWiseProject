@@ -4,7 +4,7 @@ import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import pages.sellerPage;
-import utilites.Driver;
+import utilities.Driver;
 import org.testng.Assert;
 import pages.cashWiseHomePage;
 

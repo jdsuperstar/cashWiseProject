@@ -8,9 +8,9 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.ProductsAndServicesPage;
 import pages.UserPage;
-import utilities.Config;
+import utilities.config;
 import utilities.Driver;
-import utilities.SeleniumUtils;
+import utilities.SeleniumUtilities;
 
 public class ProductsAndServicesTest {
     HomePage homePage;
@@ -24,7 +24,7 @@ public class ProductsAndServicesTest {
         userPage = new UserPage();
         productsAndServicesPage = new ProductsAndServicesPage();
         faker = new Faker();
-        Driver.getDriver().get(Config.getProperty("website"));
+        Driver.getDriver().get(config.getProperty("website"));
         homePage.login("vladtest@gmail.com", "123456");
     }
 
@@ -55,8 +55,8 @@ public class ProductsAndServicesTest {
         userPage.salesDropdown.click();
         userPage.productsAndServices.click();
         productsAndServicesPage.editButton.click();
-        SeleniumUtils.waitForSeconds(1);
-        SeleniumUtils.clear(productsAndServicesPage.priceInput);
+        SeleniumUtilities.waitForSeconds(1);
+        SeleniumUtilities.clear(productsAndServicesPage.priceInput);
         productsAndServicesPage.priceInput.sendKeys(String.valueOf(faker.number().numberBetween(1,5000)));
         productsAndServicesPage.saveProductOrService.click();
         Assert.assertTrue(productsAndServicesPage.productAlert.isDisplayed());
@@ -89,8 +89,8 @@ public class ProductsAndServicesTest {
         userPage.salesDropdown.click();
         userPage.productsAndServices.click();
         productsAndServicesPage.editButton.click();
-        SeleniumUtils.waitForSeconds(1);
-        SeleniumUtils.clear(productsAndServicesPage.priceInput);
+        SeleniumUtilities.waitForSeconds(1);
+        SeleniumUtilities.clear(productsAndServicesPage.priceInput);
         productsAndServicesPage.priceInput.sendKeys(price);
         productsAndServicesPage.saveProductOrService.click();
         Assert.assertTrue(productsAndServicesPage.priceError.isDisplayed());

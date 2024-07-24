@@ -10,6 +10,12 @@
                     <include name="nameSearch"/>
                 </methods>
             </class>
+            <class name="tests.AddingClientTest">
+                <methods>
+                    <include name="AddClient"/>
+                    <include name="ClientWasNotAdded"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

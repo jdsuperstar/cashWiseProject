@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.AddClientPage;
 import pages.HomePage;
-import utilites.Driver;
+import utilities.Driver;
 
 
 public class AddingClientTest {
@@ -34,7 +34,8 @@ public class AddingClientTest {
 
 
   @Test         //positive test (client was added successfully and Client's info is displayed
-    public void AddClient() throws InterruptedException {
+    public void AddClient()  {
+
 
      String companyName = faker.name().title();
 
