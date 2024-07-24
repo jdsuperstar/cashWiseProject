@@ -1,7 +1,13 @@
 package tests;
 
 import com.github.javafaker.Faker;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.WebDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,11 +18,22 @@ import pages.ProductsAndServicesPage;
 import pages.UserPage;
 import utilities.Driver;
 
+import java.util.List;
+
 
 public class AddingClientTest {
     HomePage homePage = new HomePage();
     AddClientPage addClientPage = new AddClientPage();
     Faker faker = new Faker();
+
+
+    @BeforeMethod //login
+    public void loginFunction(){
+        homePage = new HomePage();
+        addClientPage = new AddClientPage();
+        faker = new Faker();
+        Driver.getDriver().get("https://cashwise.us/");
+        homePage.login("vladtest@gmail.com","123456");
 
     @BeforeMethod
     public void setUp() {
@@ -27,6 +44,7 @@ public class AddingClientTest {
         faker = new Faker();
         driver.get("https://cashwise.us/");
         homePage.login("vladtest@gmail.com", "123456");
+
     }
 
     @AfterMethod
@@ -34,11 +52,13 @@ public class AddingClientTest {
         Driver.quitDriver();
     }
 
+
+     @Test //positive test (client was added successfully and Client's info is displayed
+     public void AddClient() throws InterruptedException {
+
   @Test         //positive test (client was added successfully and Client's info is displayed
-    public void AddClient()  {
 
      String companyName = faker.name().title();
-
      addClientPage.sales.click();
      addClientPage.addClient.click();
      addClientPage.selectTag.click();
@@ -58,17 +78,17 @@ public class AddingClientTest {
  }
 
  @Test //negative
+
     public void ClientWasNotAdded() throws InterruptedException {
 
     Driver.getDriver().get("https://cashwise.us/");
      homePage.login("vladtest@gmail.com","123456");
 
-     String companyName = faker.name().title();
 
+     String companyName = faker.name().title();
      addClientPage.sales.click();
      addClientPage.addClient.click();
      addClientPage.selectTag.click();
-//     addClientPage.saveButton.click();
      addClientPage.defaultTag.click();
      addClientPage.companyName.sendKeys(companyName);
      addClientPage.clientFullName.sendKeys(faker.name().fullName());
@@ -80,11 +100,25 @@ public class AddingClientTest {
      Assert.assertTrue(addClientPage.errorNameMessage.isDisplayed()); // error message (client's name can not contain special chars or digits)
 
  }
+
     @Test //tests if user can select all clients
+
     public void SelectAll(){
         addClientPage.sales.click();
         addClientPage.checkAll.click();
         Assert.assertTrue(addClientPage.checkboxes.isSelected());
+
+ }
+
+ @Test // tests if the list is empty after archiving all clients
+    public void ArchiveAll(){
+        addClientPage.sales.click();
+        addClientPage.checkAll.click();
+        addClientPage.archiveAll.click();
+        Assert.assertTrue(addClientPage.emptyMessage.isDisplayed());
+
+ }
+
     }
 
     @Test // tests if the list is empty after archiving all clients
@@ -94,7 +128,10 @@ public class AddingClientTest {
         addClientPage.archiveAll.click();
         Assert.assertTrue(addClientPage.emptyMessage.isDisplayed());
 
+
     }
 
 
 }
+
+
