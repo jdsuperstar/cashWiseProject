@@ -50,5 +50,13 @@ public class AddClientPage {
     public WebElement clientInfo;
     @FindBy(xpath = "//p[text()='Please enter a valid email address']")
     public WebElement errorNameMessage;
+    @FindBy(xpath = "//div[@style=\"padding-left: 15px;\"]//input[@type=\"checkbox\"]")
+    public WebElement checkAll;
+    @FindBy(xpath = "//input[@type=\"checkbox\"]")
+    public WebElement checkboxes;
+    @FindBy(xpath = "//button[@class=\"MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-162b761\"]")
+    public WebElement archiveAll;
+    @FindBy(xpath = "//span[contains(text(), 'List is empty')]")
+    public WebElement emptyMessage;
 
 }

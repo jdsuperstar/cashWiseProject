@@ -15,6 +15,8 @@
                 <methods>
                     <include name="AddClient"/>
                     <include name="ClientWasNotAdded"/>
+                    <include name="SelectAll"/>
+                    <include name="ArchiveAll"/>
                 </methods>
             </class>
             <class name="tests.ProductsAndServicesTest">

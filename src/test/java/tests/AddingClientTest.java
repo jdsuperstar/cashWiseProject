@@ -80,6 +80,21 @@ public class AddingClientTest {
      Assert.assertTrue(addClientPage.errorNameMessage.isDisplayed()); // error message (client's name can not contain special chars or digits)
 
  }
+    @Test //tests if user can select all clients
+    public void SelectAll(){
+        addClientPage.sales.click();
+        addClientPage.checkAll.click();
+        Assert.assertTrue(addClientPage.checkboxes.isSelected());
+    }
+
+    @Test // tests if the list is empty after archiving all clients
+    public void ArchiveAll(){
+        addClientPage.sales.click();
+        addClientPage.checkAll.click();
+        addClientPage.archiveAll.click();
+        Assert.assertTrue(addClientPage.emptyMessage.isDisplayed());
+
+    }
 
 
 }

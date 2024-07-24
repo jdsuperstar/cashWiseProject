@@ -17,14 +17,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class sellerPage {
-WebDriver driver;
-public sellerPage(){
-    this.driver = Driver.getDriver();
-    PageFactory.initElements(driver, this);
-}
+    WebDriver driver;
 
-    @FindBy(xpath ="//li[text()=\"Expenses\"]")
-    public  WebElement expenses;
+    public sellerPage() {
+        this.driver = Driver.getDriver();
+        PageFactory.initElements(driver, this);
+    }
+
+    @FindBy(xpath = "//li[text()=\"Expenses\"]")
+    public WebElement expenses;
     @FindBy(xpath = "//li[text()=\"Expenses\"]/div[@class=\"MuiListItemIcon-root css-13ink46\"]")
     public WebElement expenses2;
     @FindBy(xpath = "//a[text()=\"Sellers\"]")
@@ -32,11 +33,11 @@ public sellerPage(){
     @FindBy(xpath = "//button[text()=\"Add seller\"]")
     public WebElement addSeller;
     @FindBy(xpath = "//input[@placeholder=\"Write title\"]")
-    public  WebElement writeTitle;
+    public WebElement writeTitle;
     @FindBy(xpath = "//input[@placeholder=\"Write full name\"]")
-    public  WebElement fullName;
+    public WebElement fullName;
     @FindBy(xpath = "//input[@placeholder=\"Email\"]")
-    public  WebElement email;
+    public WebElement email;
     @FindBy(xpath = "//input[@placeholder=\"+1 ___ ___ ____ \"]")
     public WebElement phoneNumber;
     @FindBy(xpath = "//input[@placeholder=\"Write address\"]")
@@ -60,27 +61,30 @@ public sellerPage(){
     public void verifyName(String name) {
         List<WebElement> fullNames = Driver.getDriver().findElements(By.xpath("//table/tbody/tr/td[3]"));
         List<String> addedNames = new ArrayList<>();
-        for(WebElement names : fullNames){
+        for (WebElement names : fullNames) {
             addedNames.add(names.getText());
-        }Assert.assertTrue(addedNames.contains(name));
+        }
+        Assert.assertTrue(addedNames.contains(name));
         System.out.println(addedNames);
-            }
-            public void nameToSearch(){
-            searchBar.click();
-                String nameToSearch = table.getText();
-                searchBar.sendKeys(nameToSearch + Keys.ENTER);
-                Assert.assertEquals(nameSearched.getText(), nameToSearch);
-            }
-            public void enterName(String enterName) {
-                Actions actions = new Actions(driver);
-                searchBar.click();
-                actions.keyDown(searchBar,Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND);
-                actions.keyDown(searchBar, Keys.BACK_SPACE).keyUp(Keys.BACK_SPACE);
-                actions.keyDown(searchBar,Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND);
-                actions.keyDown(searchBar, Keys.BACK_SPACE).keyUp(Keys.BACK_SPACE);
-                actions.build().perform();
-                searchBar.sendKeys(enterName +Keys.ENTER);
-                Assert.assertNotEquals(enterName, table.getText());
-            }
+    }
+
+    public void nameToSearch() {
+        searchBar.click();
+        String nameToSearch = table.getText();
+        searchBar.sendKeys(nameToSearch + Keys.ENTER);
+        Assert.assertEquals(nameSearched.getText(), nameToSearch);
+    }
+
+    public void enterName(String enterName) {
+        Actions actions = new Actions(driver);
+        searchBar.click();
+        actions.keyDown(searchBar, Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND);
+        actions.keyDown(searchBar, Keys.BACK_SPACE).keyUp(Keys.BACK_SPACE);
+        actions.keyDown(searchBar, Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND);
+        actions.keyDown(searchBar, Keys.BACK_SPACE).keyUp(Keys.BACK_SPACE);
+        actions.build().perform();
+        searchBar.sendKeys(enterName + Keys.ENTER);
+        Assert.assertNotEquals(enterName, table.getText());
+    }
 
 }
