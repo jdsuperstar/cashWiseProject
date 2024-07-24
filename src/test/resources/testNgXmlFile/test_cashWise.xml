@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test CashWise">
+    <test name="Test Cashwise">
+        <classes>
+            <class name="tests.AddingClientTest">
+                <methods>
+                    <include name="AddClient"></include>
+                    <include name="ClientWasNotAdded"></include>
+                </methods>
+
+            </class>
+
+        </classes>
+
+    </test>
+</suite>
+
+
+
+
+
