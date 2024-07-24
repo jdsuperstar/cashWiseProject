@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Products">
+    <test name="Products">
+        <classes>
+            <class name="tests.ProductsAndServicesTest">
+                <methods>
+                    <include name="viewProductAndService" />
+                    <include name="addProductOrService" />
+                    <include name="editProductOrService" />
+                    <include name="deleteProductOrService" />
+                    <include name="addWithMissingFields" />
+                    <include name="editWithInvalidData" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
