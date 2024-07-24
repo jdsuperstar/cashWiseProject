@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.util.Strings;
-import utilites.Driver;
 import utilites.Driver;
 
 public class HomePageElza {
@@ -30,17 +28,8 @@ public class HomePageElza {
     @FindBy(xpath = "//button[@class=\"MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root css-hl90zr\"]")
     public WebElement signInButtonAfterValid;
 
-    //    Changing language to english
-    @FindBy (xpath = "//div[@class=\"css-q281fx\"]//p[@class=\"css-1it55co\"]")
-    public WebElement languageButton;
-    @FindBy (xpath = "//span[text()=\"English\"]")
-    public WebElement laguageBtENG;
-
 
     public void login(String email, String password){
-        languageButton.click();
-        laguageBtENG.click();
-
         signIn.click();
         emailInput.sendKeys(email);
         passwordInput.sendKeys(password);

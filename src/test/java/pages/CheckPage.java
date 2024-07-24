@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import utilites.Driver;
 
 
@@ -31,11 +32,12 @@ public class CheckPage {
     @FindBy(xpath = "//input[@id='invoice_title_input_text']\n")
     public WebElement titleButton;
 
-    @FindBy(xpath = "//div[text()=\"Select seller\"]")
+    @FindBy(xpath = "//div[@class=\" css-11unzgr\"]//div[1]")
     public WebElement selectButton;
 
-    @FindBy(xpath = "//div[text()=\"Dee Liver\"]")
+    @FindBy(xpath = "//div[@class=\" css-1wy0on6\"]")
     public WebElement selectSeller;
+
 
     @FindBy(xpath = "//textarea[@id=\"description_input_text\"]" )
     public WebElement commentBox;
@@ -49,7 +51,7 @@ public class CheckPage {
     @FindBy(xpath = "//div[@id=\"react-select-4-listbox\"]//div[3]//div[@aria-disabled=\"false\"]")
     public WebElement selectWriteTitle;
 
-    @FindBy(xpath = "//button[text()=\"Save\"]")
+    @FindBy(xpath = "//button[@class=\"MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-xdzsgw\"]")
     public WebElement saveButton;
 
     //    @FindBy(xpath ="//table//tbody//tr//td[7]")
