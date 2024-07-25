@@ -12,7 +12,6 @@ public class AddClientPage {
 
     public AddClientPage(){
 
-
         this.driver = Driver.getDriver();
         PageFactory.initElements(driver,this);
 
@@ -21,7 +20,6 @@ public class AddClientPage {
     // all stored webElements
     @FindBy(xpath = "//li[text()='Sales']")
     public WebElement sales;
-
     @FindBy(xpath = "//button[text()='Add client']")
     public WebElement addClient;
     @FindBy(xpath = "//input[@id=\"react-select-3-input\"]")

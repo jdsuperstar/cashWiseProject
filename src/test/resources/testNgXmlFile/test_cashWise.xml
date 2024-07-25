@@ -6,6 +6,8 @@
                 <methods>
                     <include name="AddClient"></include>
                     <include name="ClientWasNotAdded"></include>
+                    <include name="SelectAll"></include>
+                    <include name="ArchiveAll"></include>
                 </methods>
 
             </class>
