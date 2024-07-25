@@ -3,16 +3,16 @@ package tests;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-import pages.sellerPage;
+import pages.SellerPage;
 import utilities.Driver;
 import org.testng.Assert;
-import pages.cashWiseHomePage;
+import pages.CashWiseHomePage;
 
-public class sellertestNG2 {
+public class SellertestNG2 {
 
         WebDriver driver = Driver.getDriver();
-        cashWiseHomePage cashWiseHomePage = new cashWiseHomePage();
-        sellerPage seller = new sellerPage();
+        CashWiseHomePage cashWiseHomePage = new CashWiseHomePage();
+        SellerPage seller = new SellerPage();
         Faker faker = new Faker();
 
 

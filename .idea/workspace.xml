@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d4fb8f06-984a-42de-b363-9567ae6b78d9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2jg5d1zmNon3RGu9JsBNgDV4mKh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.AddingClientTest.AddClient.executor": "Run",
+    "TestNG.AddingClientTest.ArchiveAll.executor": "Run",
+    "TestNG.AddingClientTest.ClientWasNotAdded.executor": "Run",
+    "TestNG.AddingClientTest.SelectAll.executor": "Run",
+    "TestNG.C:/Users/j_dan/OneDrive/Desktop/cashWiseProject/src/test/resources/CashWiseProject.xml.executor": "Run",
+    "TestNG.LoginTest.logInSucces.executor": "Run",
+    "TestNG.LoginTest.logInUnsucces.executor": "Run",
+    "TestNG.ProductsAndServicesTest.addProductOrService.executor": "Run",
+    "TestNG.ProductsAndServicesTest.addWithMissingFields.executor": "Run",
+    "TestNG.ProductsAndServicesTest.deleteProductOrService.executor": "Run",
+    "TestNG.ProductsAndServicesTest.editProductOrService.executor": "Run",
+    "TestNG.ProductsAndServicesTest.editWithInvalidData.executor": "Run",
+    "TestNG.ProductsAndServicesTest.viewProductAndService.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/j_dan/OneDrive/Desktop/cashWiseProject"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.C:/Users/j_dan/OneDrive/Desktop/cashWiseProject/src/test/resources/CashWiseProject.xml">
+    <configuration name="AddingClientTest.ArchiveAll" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cashWiseProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AddingClientTest" />
+      <option name="METHOD_NAME" value="ArchiveAll" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddingClientTest.SelectAll" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cashWiseProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AddingClientTest" />
+      <option name="METHOD_NAME" value="SelectAll" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/j_dan/OneDrive/Desktop/cashWiseProject/src/test/resources/CashWiseProject.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cashWiseProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/CashWiseProject.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.logInSucces" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cashWiseProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="logInSucces" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.logInUnsucces" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cashWiseProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="logInUnsucces" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/j_dan/OneDrive/Desktop/cashWiseProject/src/test/resources/CashWiseProject.xml" />
+        <item itemvalue="TestNG.AddingClientTest.ArchiveAll" />
+        <item itemvalue="TestNG.AddingClientTest.SelectAll" />
+        <item itemvalue="TestNG.LoginTest.logInUnsucces" />
+        <item itemvalue="TestNG.LoginTest.logInSucces" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4fb8f06-984a-42de-b363-9567ae6b78d9" name="Changes" comment="" />
+      <created>1721795963087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721795963087</updated>
+    </task>
+    <servers />
+  </component>
+</project>

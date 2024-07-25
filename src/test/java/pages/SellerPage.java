@@ -11,15 +11,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import utilities.Driver;
 
-import java.security.PublicKey;
-import java.security.Security;
 import java.util.ArrayList;
 import java.util.List;
 
-public class sellerPage {
+public class SellerPage {
     WebDriver driver;
 
-    public sellerPage() {
+    public SellerPage() {
         this.driver = Driver.getDriver();
         PageFactory.initElements(driver, this);
     }

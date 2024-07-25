@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class cashWiseHomePage {
+public class CashWiseHomePage {
     WebDriver driver;
 
-    public cashWiseHomePage() {
+    public CashWiseHomePage() {
         this.driver = Driver.getDriver();
         PageFactory.initElements(driver, this);
     }

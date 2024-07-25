@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.ProductsAndServicesPage;
 import pages.UserPage;
-import utilities.config;
 import utilities.Driver;
 import utilities.SeleniumUtilities;
 
